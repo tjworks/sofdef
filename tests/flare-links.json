@@ -1,0 +1,597 @@
+{
+  "links": [
+    {
+      "src_dpid": "00:00:00:00:00:00:00:06",
+      "src_port": 3,
+      "dst_dpid": "00:00:00:00:00:00:00:09",
+      "dst_port": 4
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:06",
+      "src_port": 4,
+      "dst_dpid": "00:00:00:00:00:00:00:01",
+      "dst_port": 2
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:01",
+      "src_port": 1,
+      "dst_dpid": "00:00:00:00:00:00:00:02",
+      "dst_port": 4
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:06",
+      "src_port": 2,
+      "dst_dpid": "00:00:00:00:00:00:00:08",
+      "dst_port": 4
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:05",
+      "src_port": 4,
+      "dst_dpid": "00:00:00:00:00:00:00:02",
+      "dst_port": 3
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:0a",
+      "src_port": 2,
+      "dst_dpid": "00:00:00:00:00:00:00:0c",
+      "dst_port": 4
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:01",
+      "src_port": 2,
+      "dst_dpid": "00:00:00:00:00:00:00:06",
+      "dst_port": 4
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:0d",
+      "src_port": 4,
+      "dst_dpid": "00:00:00:00:00:00:00:0a",
+      "dst_port": 3
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:09",
+      "src_port": 4,
+      "dst_dpid": "00:00:00:00:00:00:00:06",
+      "dst_port": 3
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:03",
+      "src_port": 4,
+      "dst_dpid": "00:00:00:00:00:00:00:02",
+      "dst_port": 1
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:07",
+      "src_port": 4,
+      "dst_dpid": "00:00:00:00:00:00:00:06",
+      "dst_port": 1
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:02",
+      "src_port": 2,
+      "dst_dpid": "00:00:00:00:00:00:00:04",
+      "dst_port": 4
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:02",
+      "src_port": 3,
+      "dst_dpid": "00:00:00:00:00:00:00:05",
+      "dst_port": 4
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:06",
+      "src_port": 1,
+      "dst_dpid": "00:00:00:00:00:00:00:07",
+      "dst_port": 4
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:0a",
+      "src_port": 1,
+      "dst_dpid": "00:00:00:00:00:00:00:0b",
+      "dst_port": 4
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:01",
+      "src_port": 3,
+      "dst_dpid": "00:00:00:00:00:00:00:0a",
+      "dst_port": 4
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:0a",
+      "src_port": 3,
+      "dst_dpid": "00:00:00:00:00:00:00:0d",
+      "dst_port": 4
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:0c",
+      "src_port": 4,
+      "dst_dpid": "00:00:00:00:00:00:00:0a",
+      "dst_port": 2
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:0a",
+      "src_port": 4,
+      "dst_dpid": "00:00:00:00:00:00:00:01",
+      "dst_port": 3
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:02",
+      "src_port": 1,
+      "dst_dpid": "00:00:00:00:00:00:00:03",
+      "dst_port": 4
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:04",
+      "src_port": 4,
+      "dst_dpid": "00:00:00:00:00:00:00:02",
+      "dst_port": 2
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:08",
+      "src_port": 4,
+      "dst_dpid": "00:00:00:00:00:00:00:06",
+      "dst_port": 2
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:0b",
+      "src_port": 4,
+      "dst_dpid": "00:00:00:00:00:00:00:0a",
+      "dst_port": 1
+    },
+    {
+      "src_dpid": "00:00:00:00:00:00:00:02",
+      "src_port": 4,
+      "dst_dpid": "00:00:00:00:00:00:00:01",
+      "dst_port": 1
+    }
+  ]
+}
+
+
+
+{
+  "datapaths": [
+    {
+      "dpid": "00:00:00:00:00:00:00:01",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:37.596+0000",
+      "last_message": "2013-08-26T23:38:49.915+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43927,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 4
+    },
+    {
+      "dpid": "00:00:00:00:00:00:00:02",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:37.644+0000",
+      "last_message": "2013-08-26T23:38:49.917+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43928,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 5
+    },
+    {
+      "dpid": "00:00:00:00:00:00:00:03",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:37.693+0000",
+      "last_message": "2013-08-26T23:38:49.878+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43929,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 2
+    },
+    {
+      "dpid": "00:00:00:00:00:00:00:04",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:37.778+0000",
+      "last_message": "2013-08-26T23:38:49.875+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43930,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 2
+    },
+    {
+      "dpid": "00:00:00:00:00:00:00:05",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:37.883+0000",
+      "last_message": "2013-08-26T23:38:49.877+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43931,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 2
+    },
+    {
+      "dpid": "00:00:00:00:00:00:00:06",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:37.953+0000",
+      "last_message": "2013-08-26T23:38:49.917+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43932,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 5
+    },
+    {
+      "dpid": "00:00:00:00:00:00:00:07",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:38.038+0000",
+      "last_message": "2013-08-26T23:38:49.915+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43933,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 2
+    },
+    {
+      "dpid": "00:00:00:00:00:00:00:08",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:38.166+0000",
+      "last_message": "2013-08-26T23:38:49.875+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43934,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 2
+    },
+    {
+      "dpid": "00:00:00:00:00:00:00:09",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:38.462+0000",
+      "last_message": "2013-08-26T23:38:49.915+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43935,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 2
+    },
+    {
+      "dpid": "00:00:00:00:00:00:00:0a",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:38.509+0000",
+      "last_message": "2013-08-26T23:38:49.917+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43936,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 5
+    },
+    {
+      "dpid": "00:00:00:00:00:00:00:0b",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:38.489+0000",
+      "last_message": "2013-08-26T23:38:49.916+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43937,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 2
+    },
+    {
+      "dpid": "00:00:00:00:00:00:00:0c",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:38.653+0000",
+      "last_message": "2013-08-26T23:38:49.875+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43938,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 2
+    },
+    {
+      "dpid": "00:00:00:00:00:00:00:0d",
+      "negotiated_version": "1.0.0",
+      "ready": "2013-08-24T01:40:38.722+0000",
+      "last_message": "2013-08-26T23:38:49.877+0000",
+      "num_buffers": 256,
+      "num_tables": 255,
+      "device_ip": "127.0.0.1",
+      "device_port": 43939,
+      "masters": [],
+      "slaves": [],
+      "supported_actions": [
+        "output",
+        "set_vlan_vid",
+        "set_vlan_pcp",
+        "strip_vlan",
+        "set_dl_src",
+        "set_dl_dst",
+        "set_nw_src",
+        "set_nw_dst",
+        "set_nw_tos",
+        "set_tp_src",
+        "set_tp_dst",
+        "enqueue"
+      ],
+      "capabilities": [
+        "flow_stats",
+        "table_stats",
+        "port_stats",
+        "queue_stats",
+        "arp_match_ip"
+      ],
+      "num_ports": 2
+    }
+  ]
+}
