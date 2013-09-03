@@ -6,6 +6,8 @@ define(['model/NetworkElement'], function(NetworkElement){
     };
     NetworkNode.prototype = new NetworkElement();
     NetworkNode.prototype.constructor = NetworkNode;
+    NetworkNode.prototype.setInterfaces = function(newInterfaces){ this.interfaces = newInterfaces};
+    NetworkNode.prototype.getInterfaces = function(){ return this.interfaces};
     
     return NetworkNode;
 }); // end of define

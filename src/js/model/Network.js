@@ -8,6 +8,11 @@ define([], function(){
       getName: function(){ return this.name },
       setName: function(newname){ this.name= newname }
     }
+    Network.prototype.setNodes = function(newNodes){ this.nodes = newNodes };
+    Network.prototype.getNodes = function(){ return this.nodes  };
+    Network.prototype.setLinks = function(newLinks){ this.links = newLinks };
+    Network.prototype.getLinks = function(){ return this.links };
+    
     return Network;
 }); // end of define
 

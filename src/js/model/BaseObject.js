@@ -7,7 +7,8 @@ define(['underscore'], function(){
     };
     BaseObject.prototype = {
       getId: function(){ return this.id; },
-      setId: function(newId){ this.id = newId;}
+      setId: function(newId){ this.id = newId;},
+      toString: function(){ return arguments.callee.name + this.id}
     }
     
     return BaseObject;

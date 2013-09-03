@@ -22,12 +22,13 @@ require.config({
   }
 });
 
-require(['jquery', 'cyto', 'model/NetworkFactory', 'Example'], function(jq, cyto, factory, example){
+require(['jquery', 'cyto', 'model/NetworkFactory', 'cy/CytoscapeGraph'], function(jq, cyto, factory, CytoscapeGraph){
   console.log("jquery loaded", $);
-  console.log("cyto loaded", window.cytoscape);
+  console.log("cyto loaded" );
   console.log("factory", factory);
 
   var network = factory.loadNetwork();
-  console.log("Loaded entwork: ", network);    
+  var graph = new CytoscapeGraph(network, "#cytoframe");
+  
 });
 
