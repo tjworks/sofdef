@@ -2,11 +2,13 @@
 define([], function(){
    console.log("File loaded: NetworkAdapter");
    
-   var NetworkAdapter = function(){ 
+   var NetworkAdapter = function(){
+     //  
      this.serialize = function(network){
         return JSON.stringify(network);
       };
-     this.deserialize = function(json){
+     //
+     this.deseiralize= function(json){
         return JSON.parse(json);
       }
    }; // end function

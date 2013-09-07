@@ -1,0 +1,13 @@
+rect {
+  
+  fill:#F39C12;
+  width:100px;
+  height:20px;
+}
+
+text {
+  
+  color:#F39C12;
+  fill:#F39C12;
+  stroke:blue;
+}

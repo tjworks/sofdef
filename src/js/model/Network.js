@@ -1,4 +1,4 @@
-define([], function(){
+;define([], function(){
     console.log("File loaded: Network");
   
     var Network =  function(){
@@ -13,6 +13,7 @@ define([], function(){
     Network.prototype.setLinks = function(newLinks){ this.links = newLinks };
     Network.prototype.getLinks = function(){ return this.links };
     
+    console.log("Network is ", Network)
     return Network;
 }); // end of define
 

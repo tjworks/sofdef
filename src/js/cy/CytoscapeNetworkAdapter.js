@@ -1,15 +1,15 @@
 /** Export Network domain objects to Cytoscape JSON, and vice versus  */
 //@todo: main test target
-;define(['adapter/NetworkAdapter','model/Network'], function(NetworkAdapter,Network){
+;define(['adapter/NetworkAdapter','model/Network', 'model/Switch'], function(NetworkAdapter,Network, Switch){
   var CytoscapeNetworkAdapter = function(){
     console.log("Object init: CytoscapeNetworkAdapter");
   };
   
   CytoscapeNetworkAdapter.prototype = new NetworkAdapter();
-  CytoscapeNetworkAdapter.prototype.deserialize = function(topo){
+  CytoscapeNetworkAdapter.prototype.serialize = function(network){
       var graph = {nodes:[], edges:[]};
-      var nodes = topo.getNodes();
-      var links = topo.getLinks();
+      var nodes = network.getNodes();
+      var links = network.getLinks();
       for(var i in nodes){
           var n =  nodes[i];
           if(!n) continue;
@@ -17,7 +17,7 @@
               data:  {
                   id: n.getId(),
                   weight:20, 
-                  shape: 'rectangle'   //@todo: should it be done here?      
+                  shape: (n instanceof Switch )? 'rectangle': 'circle'   //@todo: should it be done here?      
               }
           })
       }

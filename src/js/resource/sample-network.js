@@ -1,4 +1,4 @@
-// returns an object represents Cytoscape graph
+/**// returns an object represents Cytoscape graph
   var toCytoscapeGraphModel = function(topo) {
   
       var graph = {nodes:[], edges:[]};
@@ -67,7 +67,7 @@ define(['model/Network', 'model/Switch',   'model/PhysicalNetworkInterface', 'mo
    } // end ret 
    
    var network = new Network();
-   network.setName("My Network");
+  // network.setName("My Network");
 
    var nodes = [];
    // add switches
@@ -109,4 +109,4 @@ define(['model/Network', 'model/Switch',   'model/PhysicalNetworkInterface', 'mo
    return ret;
    
 }); // end define 
-  
+  */
