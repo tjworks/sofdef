@@ -1,13 +1,46 @@
-rect {
+/**
+ *   
+ rect {
   
   fill:#F39C12;
   width:100px;
   height:20px;
+ stroke:white;
 }
 
 text {
   
   color:#F39C12;
   fill:#F39C12;
-  stroke:blue;
+  stroke:black;
+}
+*/
+
+g.Rect {
+  stroke:black;
+  fill:black;
+  border:1px solid #000
+  
+}
+
+rect {
+  rx:5;ry:8;stroke-width:2;stroke:black;fill:white;
+}
+section {
+   width: 80%;
+}
+
+.paper {
+   border: 1px solid lightgray;
+   display: inline-block;
+}
+
+pre {
+   
+   padding-left: 20px;
+   border-left: 4px solid lightgray;
+}
+
+#paper-multiple-papers-small {
+   width: 300px;
 }

@@ -16,12 +16,13 @@ require.config({
     underscore: '../../modules/underscore-1.5.1',
     backbone: '../../modules/backbone',
     cyto: '../../modules/cytoscape/build/cytoscape',
-    joint:'../../modules/joint.nojquery'
+    joint:'../../modules/joint.nojquerynobackbone',
+    dagre:'../../modules/joint.dagre'
   }
 });
 
-require(['jquery', 'underscore', 'cyto',  'model/NetworkFactory', 'cy/CytoscapeGraph', 'backbone', 'joint' , 'jointjs/JointGraph'], 
-                            function(jq, underscore, cyto,   factory, CytoscapeGraph , backbone, jointjs, JointGraph){
+require(['jquery', 'underscore', 'cyto',  'model/NetworkFactory', 'cy/CytoscapeGraph', 'backbone', 'joint' , 'jointjs/JointGraph', 'jointjs/JointExample', 'dagre' ], 
+                            function(jq, underscore, cyto,   factory, CytoscapeGraph , backbone, jointjs, JointGraph, JointExampleGraph, dagre){
                               
   console.log("dependency loaded",$, jointjs, backbone );
   console.log("factory", factory);
@@ -31,12 +32,17 @@ require(['jquery', 'underscore', 'cyto',  'model/NetworkFactory', 'cy/CytoscapeG
   //var network = factory.loadSampleMininet();
   //console.log("Sample mininet", network);
   
+  
   factory.loadNetwork("http://of:8080/net", function(network){
       console.log("Network model loaded", network)
       //var graph = new CytoscapeGraph(network, "#cytoframe");
-      
-      var jointGraph = new JointGraph(network, "#cytoframe");
+       //JointExampleGraph();    
+       var jointGraph = new JointGraph(network, "#cytoframe");
+       //$("#ctytoframe").empty();
+       
   });
+  
+  
   
 });
 
