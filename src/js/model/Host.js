@@ -1,12 +1,11 @@
 define(['model/NetworkNode'], function(NetworkNode){
     console.log("File loaded: NetworkNode");
   
-    var Host =  function(){
+    var Host =  NetworkNode.extend({
+      initialize: function(){
         console.log("Object init: Host");
-    };
-    Host.prototype = new NetworkNode();
-    Host.prototype.constructor = Host;
-    
+      }
+    }); //end extend
     return Host;
 }); // end of define
 

@@ -1,19 +1,17 @@
-;define([], function(){
+;define(['model/BaseObject'], function(BaseObject){
     console.log("File loaded: Network");
-  
-    var Network =  function(){
-        this.name="Untitled";
-    };
-    Network.prototype = {
-      getName: function(){ return this.name },
-      setName: function(newname){ this.name= newname }
-    }
-    Network.prototype.setNodes = function(newNodes){ this.nodes = newNodes };
-    Network.prototype.getNodes = function(){ return this.nodes  };
-    Network.prototype.setLinks = function(newLinks){ this.links = newLinks };
-    Network.prototype.getLinks = function(){ return this.links };
     
-    console.log("Network is ", Network)
+    var Network = BaseObject.extend({
+        initialize: function(){
+          console.log("Object init: Network");
+          this.name = "untitled";
+        },
+        setNodes: function(newNodes){ this.nodes = newNodes },
+        getNodes: function(){ return this.nodes  },
+        setLinks: function(newLinks){ this.links = newLinks },
+        getLinks: function(){ return this.links }
+    });  
+    
     return Network;
 }); // end of define
 

@@ -1,13 +1,11 @@
 define(['model/NetworkInterface'], function(NetworkInterface){
     console.log("File loaded: PhysicalNetworkInterface");
   
-    var PhysicalNetworkInterface =  function(){
-        console.log("Object init: PhysicalNetworkInterface");
-    };
-    PhysicalNetworkInterface.prototype = new NetworkInterface();
-    PhysicalNetworkInterface.prototype.constructor = PhysicalNetworkInterface;
-     
-    
+    var PhysicalNetworkInterface = NetworkInterface.extend({
+        initialize: function(){
+          console.log("Object init: PhysicalNetworkInterface");
+        }
+    }); // end extend
     
     return PhysicalNetworkInterface;
 }); // end of define

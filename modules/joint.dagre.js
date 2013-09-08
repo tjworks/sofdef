@@ -1,3 +1,5 @@
+;define(['joint'], function(){
+  
 
 
 /*! JointJS v0.6.0 - JavaScript diagramming library  2013-08-05 
@@ -4275,3 +4277,7 @@ joint.layout.DirectedGraph = {
         };
     }
 };
+
+
+
+}); // end define
