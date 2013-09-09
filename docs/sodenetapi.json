@@ -1,0 +1,61 @@
+{
+   "endpoints":[
+      {
+         "name":"Network data API",
+         "methods":[
+            {
+               "MethodName":"Get network meta information",
+	             "Synopsis":"Provide network meta information such as network unique id, type, etc",
+               "HTTPMethod":"GET",
+               "URI":"/network/meta",
+               "RequiresOAuth":"N"
+            },
+            {
+               "MethodName":"List all switches",
+               "Synopsis":"list all the switches in the network",
+               "HTTPMethod":"GET",
+               "URI":"/network/switch",
+               "RequiresOAuth":"N"
+            },
+            {
+               "MethodName":"List all hosts",
+               "Synopsis":"list all the hosts in the network",
+               "HTTPMethod":"GET",
+               "URI":"/network/host",
+               "RequiresOAuth":"N"
+            },
+            {
+               "MethodName":"List all switches and hosts",
+               "Synopsis":"list all the switches and hosts in the network",
+               "HTTPMethod":"GET",
+               "URI":"/network/node",
+               "RequiresOAuth":"N"
+            },
+            {
+               "MethodName":"List all links",
+               "Synopsis":"list all the links in the network",
+               "HTTPMethod":"GET",
+               "URI":"/network/link",
+               "RequiresOAuth":"N"
+            },
+            {
+               "MethodName":"Get switch or host data",
+               "Synopsis":"Get switch or host data",
+               "HTTPMethod":"GET",
+               "URI":"/network/node/:nodeId",
+               "RequiresOAuth":"N",
+               "parameters": [
+                        {
+                            "Name": "nodeId",
+                            "Required": "Y",
+                            "Default": "",
+                            "Type": "string",
+                            "Description": "Id of the switch or host"
+                        }
+                    ]
+            }
+         ]
+      }
+   ]
+}
+

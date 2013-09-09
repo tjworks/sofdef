@@ -22,7 +22,7 @@ joint.shapes.devs.Model = joint.shapes.basic.Generic.extend({
                 stroke: 'black'
             },
             circle: {
-                r: 10,
+                r: 5,
                 magnet: true,
                 stroke: 'black'
             },
@@ -31,8 +31,8 @@ joint.shapes.devs.Model = joint.shapes.basic.Generic.extend({
                 'pointer-events': 'none'
             },
             '.label': { text: 'Model', dx: 5, dy: 5 },
-            '.inPorts text': { x:-15, y: 4, 'text-anchor': 'end' },
-            '.outPorts text':{ x: 15, y: 4}
+            '.inPorts text': { x:-15, y: 0, 'text-anchor': 'end' },
+            '.outPorts text':{ x: 15, y: 0}
         }
 
     }, joint.shapes.basic.Generic.prototype.defaults),
@@ -60,12 +60,12 @@ joint.shapes.devs.Atomic = joint.shapes.devs.Model.extend({
     defaults: joint.util.deepSupplement({
 
         type: 'devs.Atomic',
-        size: { width: 80, height: 80 },
+        size: { width: 100, height: 50 },
         attrs: {
             rect: { fill: 'salmon' },
             '.label': { text: 'Atomic' },
             '.inPorts circle': { fill: 'PaleGreen' },
-            '.outPorts circle': { fill: 'Tomato' }
+            '.outPorts circle': { fill: 'PaleGreen' }
         }
 
     }, joint.shapes.devs.Model.prototype.defaults)
@@ -82,7 +82,7 @@ joint.shapes.devs.Coupled = joint.shapes.devs.Model.extend({
             rect: { fill: 'seaGreen' },
             '.label': { text: 'Coupled' },
             '.inPorts circle': { fill: 'PaleGreen' },
-            '.outPorts circle': { fill: 'Tomato' }
+            '.outPorts circle': { fill: 'PaleGreen' } // Tomato
         }
 
     }, joint.shapes.devs.Model.prototype.defaults)
