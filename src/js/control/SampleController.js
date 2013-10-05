@@ -12,10 +12,13 @@ define([ ], function( ){
       console.log("factory", factory);
     
       //var network = factory.loadSampleNetwork();
-      var network = factory.loadSampleMininet();
+      //var network = factory.loadSampleMininet();
       //console.log("Sample mininet", network);
-      var jointGraph = new JointGraph(network, "#cytoframe");
+      var network = factory.loadSimpleMininet();
+      var jointGraph =  JointGraph.getGraph(network, "#cytoframe");
+      console.log("###########", jointGraph)
       
+      /**
       factory.loadNetwork("http://of:8080/apiv1/network/all", function(network){
           console.log("Network model loaded", network)
           
@@ -24,9 +27,12 @@ define([ ], function( ){
           // var jointGraph = new JointGraph(network, "#cytoframe");
            
       });
+      */
+     
+     
+      require(['doodle']);
       } // end function
     );
-    
   }; // end return
   
   

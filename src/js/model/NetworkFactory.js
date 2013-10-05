@@ -1,10 +1,11 @@
 
-define(['jquery',  'resource/tree-network', 'mininet/MininetNetworkAdapter'], function($,  sampleMininet, MininetNetworkAdapter){
+define(['jquery',  'resource/tree-network', 'mininet/MininetNetworkAdapter', 'resource/singleswitch-network'], function($,  sampleMininet, MininetNetworkAdapter, simpleMininet){
   console.log("File loaded: NetworkFactory");
   var NetworkFactory = {} 
   
-  NetworkFactory.loadSampleNetwork = function(path){
-      return sampleNetwork.network; 
+  
+  NetworkFactory.loadSimpleMininet= function(path){
+     return new MininetNetworkAdapter().deserialize(simpleMininet)
   };
   NetworkFactory.loadSampleMininet = function(){
      return new MininetNetworkAdapter().deserialize(sampleMininet)

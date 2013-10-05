@@ -3960,3 +3960,11 @@ joint.shapes.basic.Path = joint.shapes.basic.Generic.extend({
         }
     }, joint.shapes.basic.Generic.prototype.defaults)
 });
+
+joint.shapes.basic.Line = joint.shapes.basic.Generic.extend({
+  markup:'<g  class="rotatable" ><g class="scalable"><line/></g></g>',
+  attrs: {
+    'line': {fill:'green', x1:100, y1:100, x2:200,y2:200, "stroke":'black', "stroke-width":10}
+  }
+  
+}); // end line

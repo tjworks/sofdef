@@ -28,15 +28,16 @@ require(['jquery', 'underscore', 'cyto',  'model/NetworkFactory', 'cy/CytoscapeG
   console.log("factory", factory);
 
   //var network = factory.loadSampleNetwork();
-  //var network = factory.loadSampleMininet();
+  var network = factory.loadSampleMininet();
   //console.log("Sample mininet", network);
+  var jointGraph = new JointGraph(network, "#cytoframe");
   
   factory.loadNetwork("http://of:8080/apiv1/network/all", function(network){
       console.log("Network model loaded", network)
       
       // switching visualization library is done here: either Cytoscape or JointJS
       //var graph = new CytoscapeGraph(network, "#cytoframe");
-       var jointGraph = new JointGraph(network, "#cytoframe");
+      // var jointGraph = new JointGraph(network, "#cytoframe");
        
   });
   

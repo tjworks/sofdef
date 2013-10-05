@@ -29,5 +29,5 @@ require(['control/SampleController', 'control/HomeController'], function(SampleC
     
     
 });
-   
-   
+  
+  var global = {} 

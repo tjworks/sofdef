@@ -1,6 +1,6 @@
 /** Export Network domain objects to Joint JSON, and vice versus  */
 //@todo: main test target
-;define(['adapter/NetworkAdapter','model/Network', 'model/Switch', 'jointjs/Shapes' ], function(NetworkAdapter,Network, Switch, Shapes){
+;define(['adapter/NetworkAdapter','model/Network', 'model/Switch', 'jointjs/Shapes' , 'jointjs/LinkArranger'], function(NetworkAdapter,Network, Switch, Shapes, LinkArranger){
   console.log("File loaded: JointNetworkAdapater")
   var JointNetworkAdapter = function(){
     console.log("Object init: JointNetworkAdapter");
@@ -20,10 +20,17 @@
               target = graph.getCell(target);
           
             var link = new joint.shapes.devs.Link({
+                id:  sourcePort+"~"+targetPort,
                 source: { id: source.id, selector: source.getPortSelector(sourcePort) },
                 target: { id: target.id, selector: target.getPortSelector(targetPort) }
             });
             graph.addCell(link);
+            link.on('change', function(evt){
+              //console.log("link changed", evt)
+            })
+            
+            // move the ports if necessary
+            console.log("Connected link", link)
         };
          
         var nodes = network.getNodes();
@@ -42,12 +49,19 @@
           var props = {id:nid, 
                        attrs: {'.label': { text: node.getId()   } }
                        };
+          /**
           if(node instanceof Switch) 
             props.outPorts = ports 
           else
+          */
             props.inPorts = ports
           var shape = new Shapes.devs.Atomic( props);
           graph.addCell(shape);
+          
+          shape.on('change:position', function(em){
+            console.log("shape position changed", em);
+            LinkArranger(em.id, graph)
+          });
         } 
         
         //graph.addCell(c1).addCell(a1).addCell(a2).addCell(a3);

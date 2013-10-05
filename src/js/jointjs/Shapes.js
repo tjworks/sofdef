@@ -142,7 +142,9 @@ joint.shapes.devs.ModelView = joint.dia.ElementView.extend({
 
             attributes[portSelector + '>text'] = { text: portName };
             attributes[portSelector] = { ref: 'rect', 'ref-y': (index + 0.5) * (1 / portCount) };
-            if (selector === '.outPorts') { attributes[portSelector]['ref-dx'] = 0; }
+            if (selector === '.outPorts') { 
+              attributes[portSelector]['ref-dx'] = 0; 
+            }
 
             $ports.append(V(portTemplate({ id: index })).node);
 
